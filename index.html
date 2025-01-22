@@ -21,18 +21,10 @@
             margin: 0;
         }
         </style>
-        <title></title>
+        <title>2024 Political Party Vote Acquisition Dashboard in Bali Province</title>
     </head>
     <body class="bg-gray-100 font-sans">
-        <!-- Navbar -->
-        <nav class="navbar">
-            <div class="logo">2024 Political Party Vote Acquisition Dashboard for Electoral Districts in Bali Province</div>
-            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
-            <ul class="menu">
-                <li><a href="../election-dashboard/">Home</a></li>
-                <li><a href="https://instagram.com/">Instagram</a></li>
-            </ul>
-            </nav>
+       
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
@@ -84,7 +76,7 @@
             zoomControl:false, maxZoom:28, minZoom:1
         })
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a> &middot; <a href="https://arradea.com">Arradea SysDev</a>');
+        map.attributionControl.setPrefix('<a href="https://georiset.github.io/election-dashboard">Home</a> &middot; <a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a> &middot; <a href="https://arradea.com">Arradea SysDev</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         // remove popup's row if "visible-with-data"
         function removeEmptyRowsFromPopupContent(content, feature) {
@@ -149,7 +141,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">Kabupaten/Kota</th>\
+                        <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -268,7 +260,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -387,7 +379,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -506,7 +498,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -625,7 +617,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -744,7 +736,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -863,7 +855,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -982,7 +974,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -1101,7 +1093,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -1223,7 +1215,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -1342,7 +1334,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -1461,7 +1453,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -1580,7 +1572,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -1699,7 +1691,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -1818,7 +1810,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -1937,7 +1929,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -2056,7 +2048,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td>' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -2175,7 +2167,7 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                       <th scope="row">Kabupaten/Kota</th>\
+                       <th scope="row">District/Municipality</th>\
                         <td class="visible-with-data" id="Kab_Kot">' + (feature.properties['Kab_Kot'] !== null ? autolinker.link(feature.properties['Kab_Kot'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
